@@ -59,7 +59,6 @@ go tool pprof http://127.0.0.1:5050/debug/pprof/goroutine
 
 ```bash
 # 安装 graphviz（如果还没有安装）
-# Ubuntu/Debian: sudo apt-get install graphviz
 # macOS: brew install graphviz
 
 # 生成 CPU 火焰图
