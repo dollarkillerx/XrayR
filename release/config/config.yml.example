@@ -12,6 +12,9 @@ ConnectionConfig:
   UplinkOnly: 2 # Time limit when the connection downstream is closed, Second
   DownlinkOnly: 4 # Time limit when the connection is closed after the uplink is closed, Second
   BufferSize: 64 # The internal cache size of each connection, kB
+Pprof:
+  enabled: true # Enable pprof profiling server
+  address: "127.0.0.1:5050" # Pprof server address and port
 Nodes:
   - PanelType: "SSpanel" # Panel type: SSpanel, NewV2board, PMpanel, Proxypanel, V2RaySocks, GoV2Panel, BunPanel
     ApiConfig:

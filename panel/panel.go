@@ -2,6 +2,8 @@ package panel
 
 import (
 	"encoding/json"
+	"net/http"
+	_ "net/http/pprof"
 	"os"
 	"sync"
 
@@ -163,6 +165,25 @@ func (p *Panel) Start() {
 	p.access.Lock()
 	defer p.access.Unlock()
 	log.Print("Start the panel..")
+
+	// Start pprof server if enabled
+	pprofConfig := getDefaultPprofConfig()
+	if p.panelConfig.PprofConfig != nil {
+		if p.panelConfig.PprofConfig.Address != "" {
+			pprofConfig.Address = p.panelConfig.PprofConfig.Address
+		}
+		pprofConfig.Enabled = p.panelConfig.PprofConfig.Enabled
+	}
+
+	if pprofConfig.Enabled {
+		go func() {
+			log.Printf("Starting pprof server on %s", pprofConfig.Address)
+			if err := http.ListenAndServe(pprofConfig.Address, nil); err != nil {
+				log.Errorf("Failed to start pprof server: %v", err)
+			}
+		}()
+	}
+
 	// Load Core
 	server := p.loadCore(p.panelConfig)
 	if err := server.Start(); err != nil {

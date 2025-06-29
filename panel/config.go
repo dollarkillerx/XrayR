@@ -13,6 +13,7 @@ type Config struct {
 	RouteConfigPath    string            `mapstructure:"RouteConfigPath"`
 	ConnectionConfig   *ConnectionConfig `mapstructure:"ConnectionConfig"`
 	NodesConfig        []*NodesConfig    `mapstructure:"Nodes"`
+	PprofConfig        *PprofConfig      `mapstructure:"Pprof"`
 }
 
 type NodesConfig struct {
@@ -33,4 +34,9 @@ type ConnectionConfig struct {
 	UplinkOnly   uint32 `mapstructure:"uplinkOnly"`
 	DownlinkOnly uint32 `mapstructure:"downlinkOnly"`
 	BufferSize   int32  `mapstructure:"bufferSize"`
+}
+
+type PprofConfig struct {
+	Enabled bool   `mapstructure:"enabled"`
+	Address string `mapstructure:"address"`
 }

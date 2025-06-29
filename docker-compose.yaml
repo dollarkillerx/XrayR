@@ -1,0 +1,9 @@
+services:
+  xrayr:
+    image: dollarkiller/xrayr:latest
+    container_name: xrayr
+    volumes:
+      - ./config.yml:/etc/XrayR/config.yml:ro
+      - ./ssl:/etc/xrayr-ssl:ro
+    network_mode: host
+    restart: unless-stopped
