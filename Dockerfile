@@ -18,7 +18,7 @@ ENV GOOS=linux
 ENV GOARCH=amd64
 
 # Build the application
-RUN go build -v -o XrayR -trimpath -ldflags "-s -w -buildid=" .
+RUN go build -v -o XrayR .
 
 # Release
 FROM alpine:latest
