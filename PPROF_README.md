@@ -45,27 +45,29 @@ Pprof:
 ### 4. 使用 go tool pprof 命令行工具
 
 ```bash
-# CPU 分析（30秒）
-go tool pprof http://127.0.0.1:5050/debug/pprof/profile?seconds=30
+# CPU 分析（采样 30 秒）
+go tool pprof "http://154.21.80.108:5050/debug/pprof/profile?seconds=30"
 
-# 内存分析
-go tool pprof http://127.0.0.1:5050/debug/pprof/heap
+# 内存（堆）分析
+go tool pprof "http://127.0.0.1:5050/debug/pprof/heap"
 
 # Goroutine 分析
-go tool pprof http://127.0.0.1:5050/debug/pprof/goroutine
+go tool pprof "http://127.0.0.1:5050/debug/pprof/goroutine"
 ```
 
 ### 5. 生成火焰图
 
 ```bash
-# 安装 graphviz（如果还没有安装）
-# macOS: brew install graphviz
+# ✅ 安装 Graphviz（如尚未安装）
+# macOS:
+brew install graphviz
 
-# 生成 CPU 火焰图
-go tool pprof -http=:8080 http://127.0.0.1:5050/debug/pprof/profile?seconds=30
+# 打开 CPU 火焰图界面（采样 30 秒）
+go tool pprof -http=:8080 "http://154.21.80.108:5050/debug/pprof/profile?seconds=30"
 
-# 生成内存火焰图
-go tool pprof -http=:8080 http://127.0.0.1:5050/debug/pprof/heap
+# 打开内存火焰图界面
+go tool pprof -http=:8080 "http://127.0.0.1:5050/debug/pprof/heap"
+
 ```
 
 ## 安全注意事项
