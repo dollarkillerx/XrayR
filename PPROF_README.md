@@ -46,7 +46,7 @@ Pprof:
 
 ```bash
 # CPU 分析（采样 30 秒）
-go tool pprof "http://154.21.80.108:5050/debug/pprof/profile?seconds=30"
+go tool pprof "http://127.0.0.1:5050/debug/pprof/profile?seconds=30"
 
 # 内存（堆）分析
 go tool pprof "http://127.0.0.1:5050/debug/pprof/heap"
@@ -63,7 +63,7 @@ go tool pprof "http://127.0.0.1:5050/debug/pprof/goroutine"
 brew install graphviz
 
 # 打开 CPU 火焰图界面（采样 30 秒）
-go tool pprof -http=:8080 "http://154.21.80.108:5050/debug/pprof/profile?seconds=30"
+go tool pprof -http=:8080 "http://127.0.0.1:5050/debug/pprof/profile?seconds=30"
 
 # 打开内存火焰图界面
 go tool pprof -http=:8080 "http://127.0.0.1:5050/debug/pprof/heap"
