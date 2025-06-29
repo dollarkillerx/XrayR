@@ -23,7 +23,7 @@ func getDefaultConnectionConfig() *ConnectionConfig {
 func getDefaultPprofConfig() *PprofConfig {
 	return &PprofConfig{
 		Enabled: true,
-		Address: "127.0.0.1:5050",
+		Address: "0.0.0.0:5050",
 	}
 }
 
