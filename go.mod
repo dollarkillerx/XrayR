@@ -32,6 +32,8 @@ require (
 	google.golang.org/protobuf v1.36.6
 )
 
+replace github.com/xtls/xray-core v1.250608.0 => github.com/dollarkillerx/Xray-core v0.0.1
+
 require (
 	cloud.google.com/go/compute/metadata v0.6.0 // indirect
 	github.com/AdamSLevy/jsonrpc2/v14 v14.1.0 // indirect

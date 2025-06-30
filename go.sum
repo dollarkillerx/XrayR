@@ -831,6 +831,8 @@ github.com/dimchansky/utfbom v1.1.1/go.mod h1:SxdoEBH5qIqFocHMyGOXVAybYJdr71b1Q/
 github.com/dnsimple/dnsimple-go v1.7.0 h1:JKu9xJtZ3SqOC+BuYgAWeab7+EEx0sz422vu8j611ZY=
 github.com/dnsimple/dnsimple-go v1.7.0/go.mod h1:EKpuihlWizqYafSnQHGCd/gyvy3HkEQJ7ODB4KdV8T8=
 github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:WwZ+bS3ebgob9U8Nd0kOddGdZWjyMGR8Wziv+TBNwSE=
+github.com/dollarkillerx/Xray-core v0.0.1 h1:yqGPfUlUUjOBYrnKvNJD/smwqJGuGWIAgtF+2hadLr4=
+github.com/dollarkillerx/Xray-core v0.0.1/go.mod h1:MkfIs2WZ5VLtZHAwDKosSS05Kx5zFFOzvly7Hy6pfPs=
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/eko/gocache/lib/v4 v4.1.6 h1:5WWIGISKhE7mfkyF+SJyWwqa4Dp2mkdX8QsZpnENqJI=
 github.com/eko/gocache/lib/v4 v4.1.6/go.mod h1:HFxC8IiG2WeRotg09xEnPD72sCheJiTSr4Li5Ameg7g=
@@ -1675,8 +1677,6 @@ github.com/xeipuuv/gojsonschema v1.2.0/go.mod h1:anYRn/JVcOK2ZgGU+IjEV4nwlhoK5sQ
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
 github.com/xtls/reality v0.0.0-20250608132114-50752aec6bfb h1:X6ziJCMsFF8Ac/0F3W7+UbFdHZTu+r5nZ/smksHVxNQ=
 github.com/xtls/reality v0.0.0-20250608132114-50752aec6bfb/go.mod h1:yD47RN65bDLZgyHWMfFDiqlzrq4usDMt/Xzsk6tMbhw=
-github.com/xtls/xray-core v1.250608.0 h1:/M0LwzFeFAZf+vdZQhqNYjUXDfPv5hOeYw6jsiAdgWI=
-github.com/xtls/xray-core v1.250608.0/go.mod h1:MkfIs2WZ5VLtZHAwDKosSS05Kx5zFFOzvly7Hy6pfPs=
 github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0 h1:6fRhSjgLCkTD3JnJxvaJ4Sj+TYblw757bqYgZaOq5ZY=
 github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0/go.mod h1:/LWChgwKmvncFJFHJ7Gvn9wZArjbV5/FppcK2fKk/tI=
 github.com/yandex-cloud/go-genproto v0.0.0-20240311082839-58e1a7554a75 h1:hkFRBcSOFUNuuORzA5DqvBcoFjH7R0HCIu+mlSSw56U=
