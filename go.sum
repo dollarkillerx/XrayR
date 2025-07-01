@@ -831,8 +831,8 @@ github.com/dimchansky/utfbom v1.1.1/go.mod h1:SxdoEBH5qIqFocHMyGOXVAybYJdr71b1Q/
 github.com/dnsimple/dnsimple-go v1.7.0 h1:JKu9xJtZ3SqOC+BuYgAWeab7+EEx0sz422vu8j611ZY=
 github.com/dnsimple/dnsimple-go v1.7.0/go.mod h1:EKpuihlWizqYafSnQHGCd/gyvy3HkEQJ7ODB4KdV8T8=
 github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:WwZ+bS3ebgob9U8Nd0kOddGdZWjyMGR8Wziv+TBNwSE=
-github.com/dollarkillerx/Xray-core v0.0.2 h1:bbotb2abnU9xKt0IAjnuai+ZRiyX0T3Ruuyy2onrgQQ=
-github.com/dollarkillerx/Xray-core v0.0.2/go.mod h1:MkfIs2WZ5VLtZHAwDKosSS05Kx5zFFOzvly7Hy6pfPs=
+github.com/dollarkillerx/Xray-core v0.0.3 h1:d0ztsdNbgirojj5fc+GdBrGykGKoSrtP+CM+lTBvEOY=
+github.com/dollarkillerx/Xray-core v0.0.3/go.mod h1:MkfIs2WZ5VLtZHAwDKosSS05Kx5zFFOzvly7Hy6pfPs=
 github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
 github.com/eko/gocache/lib/v4 v4.1.6 h1:5WWIGISKhE7mfkyF+SJyWwqa4Dp2mkdX8QsZpnENqJI=
 github.com/eko/gocache/lib/v4 v4.1.6/go.mod h1:HFxC8IiG2WeRotg09xEnPD72sCheJiTSr4Li5Ameg7g=
