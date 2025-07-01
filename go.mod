@@ -32,7 +32,7 @@ require (
 	google.golang.org/protobuf v1.36.6
 )
 
-replace github.com/xtls/xray-core v1.250608.0 => github.com/dollarkillerx/Xray-core v0.0.5
+replace github.com/xtls/xray-core v1.250608.0 => github.com/dollarkillerx/Xray-core v0.0.6
 
 require (
 	cloud.google.com/go/compute/metadata v0.6.0 // indirect
