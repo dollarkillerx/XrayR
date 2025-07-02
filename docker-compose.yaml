@@ -3,7 +3,19 @@ services:
     image: dollarkiller/xrayr:latest
     container_name: xrayr
     volumes:
-      - ./config.yml:/etc/XrayR/config.yml:ro
-      - ./ssl:/etc/xrayr-ssl:ro
+      - ./config/:/etc/XrayR/config/
+      - ./xrayr-ssl/:/etc/xrayr-ssl/
     network_mode: host
     restart: unless-stopped
+    environment:
+      # 面板配置
+      - XRAYR_API_HOST=https://api.hisuyou.org
+      - XRAYR_API_KEY=a60a866d-97b4-411c-ae97-a208e1ed4f09
+      - XRAYR_NODE_ID=4
+      - XRAYR_PANEL_TYPE=V2board
+      - XRAYR_NODE_TYPE=Shadowsocks
+      # 网络配置
+      - XRAYR_LISTEN_IP=0.0.0.0
+      - XRAYR_SEND_IP=0.0.0.0
+      # 日志级别
+      - XRAYR_LOG_LEVEL=info
