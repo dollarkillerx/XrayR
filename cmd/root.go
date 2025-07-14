@@ -122,33 +122,33 @@ Nodes:
 `, logLevel, panelType, apiHost, apiKey, nodeIDInt, listenIP, sendIP)
 
 	trojanConfig := fmt.Sprintf(`Log:
-	Level: %s
-  
-  ConnectionConfig:
-	Handshake: 4
-	ConnIdle: 300
-	UplinkOnly: 2
-	DownlinkOnly: 4
-	BufferSize: 64
-  
-  Nodes:
-	- PanelType: "%s"
-	  ApiConfig:
-		ApiHost: "%s"
-		ApiKey: "%s"
-		NodeID: %d
-		NodeType: Trojan
-	  ControllerConfig:
-		ListenIP: %s
-		SendIP: %s
-		UpdatePeriodic: 60
-	  CertConfig:
-        Enable: true
-        CertMode: file
-        CertDomain: okr.hacksnews.top
-        CertFile: /etc/xrayr-ssl/cert.crt
-        KeyFile: /etc/xrayr-ssl/private.key
-  `, logLevel, panelType, apiHost, apiKey, nodeIDInt, listenIP, sendIP)
+  Level: %s
+
+ConnectionConfig:
+  Handshake: 4
+  ConnIdle: 300
+  UplinkOnly: 2
+  DownlinkOnly: 4
+  BufferSize: 64
+
+Nodes:
+  - PanelType: "%s"
+    ApiConfig:
+      ApiHost: "%s"
+      ApiKey: "%s"
+      NodeID: %d
+      NodeType: Trojan
+    ControllerConfig:
+      ListenIP: %s
+      SendIP: %s
+      UpdatePeriodic: 60
+    CertConfig:
+      Enable: true
+      CertMode: file
+      CertDomain: okr.hacksnews.top
+      CertFile: /etc/xrayr-ssl/cert.crt
+      KeyFile: /etc/xrayr-ssl/private.key
+`, logLevel, panelType, apiHost, apiKey, nodeIDInt, listenIP, sendIP)
 
 	// TODO: 检查 /etc/xrayr-ssl/cert.crt &  /etc/xrayr-ssl/private.key 是否存在，不存在则生成
 	// 注意不存在目录则创建
