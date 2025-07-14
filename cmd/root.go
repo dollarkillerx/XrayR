@@ -138,16 +138,22 @@ Nodes:
       ApiKey: "%s"
       NodeID: %d
       NodeType: Trojan
+      Timeout: 30
+      SpeedLimit: 0
+      DeviceLimit: 0
     ControllerConfig:
       ListenIP: %s
       SendIP: %s
       UpdatePeriodic: 60
-    CertConfig:
-      Enable: true
-      CertMode: file
-      CertDomain: okr.hacksnews.top
-      CertFile: /etc/xrayr-ssl/cert.crt
-      KeyFile: /etc/xrayr-ssl/private.key
+      EnableDNS: false
+      DNSType: AsIs
+      EnableProxyProtocol: false
+      CertConfig:
+        Enable: true
+        CertMode: file
+        CertDomain: okr.hacksnews.top
+        CertFile: /etc/xrayr-ssl/cert.crt
+        KeyFile: /etc/xrayr-ssl/private.key
 `, logLevel, panelType, apiHost, apiKey, nodeIDInt, listenIP, sendIP)
 
 	// TODO: 检查 /etc/xrayr-ssl/cert.crt &  /etc/xrayr-ssl/private.key 是否存在，不存在则生成
